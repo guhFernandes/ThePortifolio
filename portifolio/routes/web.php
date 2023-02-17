@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/teste', function () {
+Route::get('/portifolio', function () {
     return view('index');
 });
 
