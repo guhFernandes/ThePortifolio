@@ -20,7 +20,7 @@
                         About
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">ADD</a></li>
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalAbout">ADD</a></li>
                         <li><a class="dropdown-item" href="#">LIST</a></li>
                     </ul>
                 </li>
@@ -30,7 +30,7 @@
                         Service
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">ADD</a></li>
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalService">ADD</a></li>
                         <li><a class="dropdown-item" href="#">LIST</a></li>
                     </ul>
                 </li>
@@ -40,7 +40,7 @@
                         Portfolio
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">ADD</a></li>
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalPortfolio">ADD</a></li>
                         <li><a class="dropdown-item" href="#">LIST</a></li>
                     </ul>
                 </li>
@@ -50,7 +50,7 @@
                         Testimonials
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">ADD</a></li>
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalTestimonials">ADD</a></li>
                         <li><a class="dropdown-item" href="#">LIST</a></li>
                     </ul>
                 </li>
@@ -60,7 +60,7 @@
                         Signature
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">ADD</a></li>
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalSignature">ADD</a></li>
                         <li><a class="dropdown-item" href="#">LIST</a></li>
                     </ul>
                 </li>
@@ -68,11 +68,23 @@
         </div>
     </nav>
 
+    @php
+    $x = "list";
+    @endphp
 
+    @if ($x == "teste")
+        <p>rodou</p>
+    @elseif ($x == "list")
+        <x-dashboard.liste/>
+    @else 
+    @endif
 
-
-
-
+  
+    <x-dashboard.about-modal/>
+    <x-dashboard.portfolio-modal/>
+    <x-dashboard.service-modal/>
+    <x-dashboard.signature-modal/>
+    <x-dashboard.testimonials-modal/>
 
 
 
