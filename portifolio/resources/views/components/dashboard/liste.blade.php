@@ -1,22 +1,13 @@
 <div class="justify-content-center align-items-center row">
-    <div class="col-md-6 align-self-center text-center">
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    <div class="input-group mb-3 col-md-6 justify-content-center">
+        <form action="" class="input-group mb-6 col-md-7 ">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        
+            </div>
         </form>
     </div>
 </div>
-
-<!--
-<form class="form-inline my-2 my-lg-0 justify-content-center">
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-</form>
--->
-
-
-
-
-
-
 
