@@ -2,7 +2,7 @@
 @section('title', 'Deshboard')
 @section('content')
 
-    <x-dashboard.navbar/>
+    <x-dashboard.navbar />
 
     @php
         $x = 'list';
@@ -13,6 +13,12 @@
     @elseif ($x == 'list')
         <x-dashboard.liste />
     @else
+    @endif
+    
+    @if (session('img'))
+        <div class="alert alert-success" role="alert">
+        {{ session('img') }}
+        </div>
     @endif
 
 
