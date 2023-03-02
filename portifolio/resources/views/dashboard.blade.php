@@ -4,23 +4,18 @@
 
     <x-dashboard.navbar />
 
-    @php
-        $x = 'list';
-    @endphp
-
-    @if ($x == 'teste')
-        <p>rodou</p>
-    @elseif ($x == 'list')
-        <x-dashboard.liste />
+    @if ($x == 'list')
+        <x-dashboard.liste :result="$list" :service="$type"/>
     @else
     @endif
     
-    @if (session('img'))
+    @if (isset($msg))
         <div class="alert alert-success" role="alert">
-        {{ session('img') }}
+            {{$msg}}
         </div>
-    @endif
+    @else
 
+    @endif
 
     <x-dashboard.about-modal />
     <x-dashboard.portfolio-modal />
