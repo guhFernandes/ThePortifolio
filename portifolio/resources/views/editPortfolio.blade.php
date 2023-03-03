@@ -22,7 +22,7 @@
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Tipo</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="type">
-                            <option selected disabled>
+                            <option value="{{$list->type}}" >
                                 @if($list->type == "front end")
                                     Front end
                                 @elseif($list->type == "back end")
