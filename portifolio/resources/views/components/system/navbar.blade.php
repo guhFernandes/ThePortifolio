@@ -15,14 +15,8 @@
             <li class="item">
                 <a class="link" href="#testmonial">Testmonial</a>
             </li>
-            <li class="item">
-                <a class="link" href="#blog">Blog</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#contact">Contact</a>
-            </li>
             <li class="item ml-md-3">
-                <a href="components.html" class="btn btn-primary">Components</a>
+                <a href="login" class="btn btn-primary">Login</a>
             </li>
         </ul>
         <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">

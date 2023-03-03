@@ -1,6 +1,6 @@
 <div class="justify-content-center align-items-center row">
     <div class="input-group mb-3 col-md-6 justify-content-center">
-        <form action="/search/{{$service}}" method="POST" class="input-group mb-6 col-md-7 ">
+        <form action="/search/{{$service}}" method="POST" class="input-group mb-6 col-md-7 mt-3">
             @csrf
             <input type="text" class="form-control" name="search" placeholder="Search" aria-label="Recipient's username"
                 aria-describedby="button-addon2">
